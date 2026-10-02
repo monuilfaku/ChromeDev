@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - VoluTab</title>
+  <title>Privacy Policy - Form Recovery</title>
   <link rel="icon" type="image/png" href="icons/icon32.png">
   <style>
     :root {
@@ -14,7 +14,7 @@
       --text-muted: #94a3b8;
       --accent: #38bdf8;
       --accent-glow: rgba(56, 189, 248, 0.15);
-      --amber: #f97316;
+      --primary: #2563eb;
       --green: #10b981;
       --green-glow: rgba(16, 185, 129, 0.12);
     }
@@ -38,7 +38,6 @@
       margin: 0 auto;
     }
 
-    /* Header */
     .header {
       display: flex;
       align-items: center;
@@ -52,7 +51,7 @@
       width: 52px;
       height: 52px;
       border-radius: 14px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      background: linear-gradient(135deg, #1e3a8a, #0f172a);
       border: 1px solid var(--card-border);
       display: flex;
       align-items: center;
@@ -60,7 +59,7 @@
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     }
 
-    .brand-icon svg {
+    .brand-icon img {
       width: 32px;
       height: 32px;
     }
@@ -88,7 +87,6 @@
       font-weight: 600;
     }
 
-    /* Highlight Summary Box */
     .guarantee-box {
       background: var(--green-glow);
       border: 1px solid rgba(16, 185, 129, 0.3);
@@ -98,300 +96,174 @@
     }
 
     .guarantee-box h2 {
-      font-size: 18px;
-      color: var(--green);
+      font-size: 16px;
+      font-weight: 700;
+      color: #34d399;
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 8px;
     }
 
     .guarantee-box p {
-      font-size: 15px;
-      color: #cbd5e1;
+      font-size: 14px;
+      color: #e2e8f0;
+      line-height: 1.6;
     }
 
-    /* Policy Content Sections */
-    section {
+    .section {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 14px;
-      padding: 28px;
+      padding: 26px 28px;
       margin-bottom: 24px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
 
-    h2 {
-      font-size: 20px;
+    .section h3 {
+      font-size: 17px;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
     }
 
-    h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: #e2e8f0;
-      margin: 18px 0 8px;
-    }
-
-    p {
+    .section p {
+      font-size: 14px;
       color: var(--text-muted);
       margin-bottom: 12px;
-      font-size: 15px;
     }
 
-    ul {
-      list-style: none;
-      margin: 12px 0 16px;
-    }
-
-    li {
-      position: relative;
-      padding-left: 24px;
-      margin-bottom: 10px;
-      color: #cbd5e1;
-      font-size: 14.5px;
-    }
-
-    li::before {
-      content: "•";
-      position: absolute;
-      left: 8px;
-      color: var(--accent);
-      font-size: 18px;
-      line-height: 1;
-    }
-
-    .tag {
-      display: inline-block;
-      font-family: monospace;
-      font-size: 12.5px;
-      background: #1e293b;
-      color: var(--accent);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      padding: 2px 7px;
-      border-radius: 5px;
-      margin-right: 4px;
-    }
-
-    /* Grid for Permissions */
-    .permission-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .permission-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 14px 18px;
-    }
-
-    .permission-title {
-      font-weight: 700;
-      font-size: 14px;
-      color: #ffffff;
-      margin-bottom: 4px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .permission-desc {
-      font-size: 13.5px;
-      color: var(--text-muted);
+    .section p:last-child {
       margin-bottom: 0;
     }
 
-    /* Footer */
+    .section ul {
+      margin: 10px 0 14px 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .section li {
+      margin-bottom: 6px;
+    }
+
+    .section strong {
+      color: #f1f5f9;
+    }
+
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      color: #38bdf8;
+      margin: 10px 0;
+    }
+
     footer {
       text-align: center;
-      margin-top: 48px;
-      padding-top: 24px;
+      padding-top: 30px;
       border-top: 1px solid var(--card-border);
-      color: #64748b;
       font-size: 13px;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+      color: var(--text-muted);
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <!-- Header -->
     <header class="header">
       <div class="brand-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-        </svg>
+        <img src="icons/icon32.png" alt="Form Recovery Icon">
       </div>
       <div class="brand-details">
-        <h1>VoluTab: Per-Tab Volume Control & Booster</h1>
-        <p>Official Privacy Policy & Data Disclosure</p>
-        <span class="last-updated">Effective Date: September 27, 2026</span>
+        <h1>Privacy Policy</h1>
+        <p>Form Recovery: Automatic Form Backup & Recovery Extension</p>
+        <span class="last-updated">Last Updated: September 2026</span>
       </div>
     </header>
 
-    <!-- 100% Local Guarantee Box -->
     <div class="guarantee-box">
       <h2>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
         </svg>
-        100% Local & Privacy-First Commitment
+        Our Absolute Privacy Guarantee
       </h2>
       <p>
-        <strong>VoluTab does NOT collect, store, transmit, or sell any personal data, browsing history, or user information.</strong> 
-        All audio processing, volume calculations, and user preference storage occur 100% locally inside your browser sandbox.
+        <strong>Form Recovery operates 100% locally on your computer.</strong> We do not collect, transmit, monetize, or inspect any of your data. No analytics, no telemetry, no tracking cookies, and zero external server connections. What you type stays inside your personal browser sandbox.
       </p>
     </div>
 
-    <!-- Section 1 -->
-    <section>
-      <h2>1. Overview & Single Purpose</h2>
+    <section class="section">
+      <h3>1. Overview & Single Purpose</h3>
       <p>
-        <strong>VoluTab: Per-Tab Volume Control & Booster</strong> ("VoluTab", "we", "our") is a browser extension developed with a single, dedicated purpose: 
-        <strong>to allow users to independently control, mute, and boost (up to 500%) the audio volume of media playing across individual browser tabs.</strong>
-      </p>
-      <p>
-        We believe privacy is a fundamental human right. VoluTab was specifically engineered from the ground up to operate without servers, databases, accounts, or telemetry.
+        Form Recovery is designed for a single, narrow purpose: to safeguard user-typed web inputs against accidental browser crashes, session timeouts, and closed tabs, providing one-click recovery when needed.
       </p>
     </section>
 
-    <!-- Section 2 -->
-    <section>
-      <h2>2. Information We Do NOT Collect</h2>
-      <p>VoluTab does not collect any data whatsoever. For complete clarity and transparency, we explicitly declare that we do NOT collect, access, or log:</p>
+    <section class="section">
+      <h3>2. Data Storage & Architecture</h3>
+      <p>
+        All backed-up form inputs are stored strictly within Chrome's local storage sandbox (<code>chrome.storage.local</code>).
+      </p>
       <ul>
-        <li><strong>No Personally Identifiable Information (PII):</strong> No names, email addresses, phone numbers, IP addresses, or IDs.</li>
-        <li><strong>No Browsing History or Web Activity:</strong> We do not track, log, or transmit the websites you visit or the pages you open.</li>
-        <li><strong>No Audio or Video Content:</strong> We do NOT record, intercept, or listen to your audio or video streams. The Web Audio API operates purely in memory on your local hardware output.</li>
-        <li><strong>No Health, Financial, or Authentication Data:</strong> Zero access to passwords, tokens, cookies, or credentials.</li>
-        <li><strong>No Analytics or Telemetry:</strong> No Google Analytics, no trackers, no pixels, and no external tracking beacons.</li>
+        <li><strong>Local Scope:</strong> Drafts are scoped deterministically to <code>origin + pathname</code> so session query parameters or random hashes never create duplicated or leaked entries.</li>
+        <li><strong>Zero Remote Transmission:</strong> Form inputs are never uploaded to any remote server or cloud infrastructure.</li>
+        <li><strong>Auto-Pruning:</strong> Drafts older than the user-configured retention period (1, 3, 7, or 30 days) are pruned automatically by a local background service worker.</li>
       </ul>
     </section>
 
-    <!-- Section 3 -->
-    <section>
-      <h2>3. How Local Storage Works (chrome.storage.local)</h2>
+    <section class="section">
+      <h3>3. Strict Privacy Exclusions (What We NEVER Save)</h3>
       <p>
-        VoluTab allows you to save custom volume levels for specific domains (for example, keeping YouTube at 150%). 
-      </p>
-      <p>
-        When the "Remember volume per site" option is enabled:
+        Form Recovery employs a strict multi-layer filter that deliberately refuses to save any sensitive credentials:
       </p>
       <ul>
-        <li>Preferences are saved strictly onto your personal computer using the Chrome Extension API (<span class="tag">chrome.storage.local</span>).</li>
-        <li>Only the domain name (e.g. <code>youtube.com</code>) and your selected volume number (e.g. <code>150</code>) are saved.</li>
-        <li>This data never leaves your device and can be cleared at any time by toggling the option off or uninstalling the extension.</li>
+        <li><strong>Passwords:</strong> Any element with <code>type="password"</code> or <code>type="hidden"</code> is completely ignored.</li>
+        <li><strong>Payment & Card Data:</strong> Fields with autocomplete tokens such as <code>cc-number</code>, <code>cc-csc</code>, <code>cc-exp</code>, or payment tokens are excluded.</li>
+        <li><strong>Authentication & Security Tokens:</strong> One-time passcodes (<code>one-time-code</code> / OTP / 2FA), PIN numbers, and SSN fields are never recorded.</li>
+        <li><strong>Explicitly Excluded Fields:</strong> Elements marked with <code>data-private</code>, <code>data-sensitive</code>, or inside <code>form[autocomplete="off"]</code> with sensitive keyword patterns.</li>
+        <li><strong>Domain Blacklist:</strong> Users can exclude entire domains (and their subdomains) from ever being tracked.</li>
       </ul>
     </section>
 
-    <!-- Section 4 -->
-    <section>
-      <h2>4. Browser Permissions & Justification</h2>
+    <section class="section">
+      <h3>4. Chrome Permissions Disclosures</h3>
       <p>
-        In strict compliance with the Google Chrome Web Store Developer Program Policies, VoluTab requests only the absolute minimum permissions required to perform its single purpose:
+        Form Recovery requests only the minimal permissions required to provide its core service:
       </p>
-
-      <div class="permission-grid">
-        <div class="permission-card">
-          <div class="permission-title">
-            <span class="tag">tabs</span> Detect Audible Tabs & Tab Mixer
-          </div>
-          <p class="permission-desc">
-            Used exclusively to detect which open tabs are currently playing sound (via the browser's <code>tab.audible</code> property) and display their title and favicon in the popup mixer. This enables you to mute or adjust background tabs without searching for them.
-          </p>
-        </div>
-
-        <div class="permission-card">
-          <div class="permission-title">
-            <span class="tag">storage</span> Save Local Preferences
-          </div>
-          <p class="permission-desc">
-            Used solely to save your local UI preferences and optional per-domain volume levels locally on your computer via <code>chrome.storage.local</code>.
-          </p>
-        </div>
-
-        <div class="permission-card">
-          <div class="permission-title">
-            <span class="tag">scripting</span> Audio Engine Attachment
-          </div>
-          <p class="permission-desc">
-            Used to attach the volume controller to media elements in tabs that were already open when the extension is installed or updated, preventing you from having to reload your open tabs.
-          </p>
-        </div>
-
-        <div class="permission-card">
-          <div class="permission-title">
-            <span class="tag">&lt;all_urls&gt;</span> Host Permission for Media Control
-          </div>
-          <p class="permission-desc">
-            Users play audio and video across millions of websites (YouTube, Twitch, Spotify, podcasts, online courses, news). To boost or adjust sound on any tab you open, the extension must be able to interact with the standard HTML5 <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements on that page.
-          </p>
-        </div>
-      </div>
+      <ul>
+        <li><strong><code>storage</code>:</strong> Required to persist form drafts and user settings locally within <code>chrome.storage.local</code>.</li>
+        <li><strong><code>alarms</code>:</strong> Required to run a daily background maintenance schedule that automatically cleans up drafts older than your configured retention policy.</li>
+        <li><strong>Host Permission (<code>&lt;all_urls&gt;</code>):</strong> Required because users fill out forms across diverse web domains. Without broad host access, the extension cannot know where user forms need crash protection.</li>
+      </ul>
     </section>
 
-    <!-- Section 5 -->
-    <section>
-      <h2>5. Remote Code & Third Parties</h2>
+    <section class="section">
+      <h3>5. User Data Control & Deletion</h3>
       <p>
-        <strong>No Remote Code:</strong> VoluTab does not use remote code. All JavaScript, CSS, and HTML files are completely packaged inside the extension file verified by the Chrome Web Store.
+        You maintain complete ownership and control over your saved form drafts:
       </p>
+      <ul>
+        <li><strong>Selective Deletion:</strong> Delete drafts for individual sites directly from the extension popup.</li>
+        <li><strong>Full Data Wipe:</strong> The Options page features a "Delete All Data" action that instantly erases all stored drafts from your browser.</li>
+        <li><strong>Uninstall Cleanup:</strong> Removing the extension automatically and permanently deletes all data stored by Form Recovery.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>6. Changes & Contact</h3>
       <p>
-        <strong>No Third-Party Sharing:</strong> Because we do not collect any data, we do not and cannot share, transfer, or sell data to third parties, advertising networks, or data brokers.
+        Any updates to this privacy policy will be reflected directly on this page. If you have any inquiries regarding this policy or the extension's privacy architecture, please submit an issue on the official project repository.
       </p>
     </section>
 
-    <!-- Section 6 -->
-    <section>
-      <h2>6. Children's Online Privacy (COPPA Compliance)</h2>
-      <p>
-        VoluTab does not collect any personal data from anyone, including children under the age of 13. It is fully compliant with the Children's Online Privacy Protection Act (COPPA).
-      </p>
-    </section>
-
-    <!-- Section 7 -->
-    <section>
-      <h2>7. Changes to This Privacy Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time to reflect changes in extension features or legal requirements. Any updates will be posted directly to this page with an updated "Effective Date".
-      </p>
-    </section>
-
-    <!-- Section 8 -->
-    <section>
-      <h2>8. Contact Information</h2>
-      <p>
-        If you have any questions, feedback, or concerns regarding this Privacy Policy or the security of VoluTab, please reach out to us at:
-      </p>
-      <p style="margin-bottom: 0;">
-        <strong>Email:</strong> <a href="mailto:support@volutab.app" style="color: var(--accent);">support@volutab.app</a><br>
-        <strong>Project Repository:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">GitHub Project / VoluTab</a>
-      </p>
-    </section>
-
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2026 VoluTab. All rights reserved. 100% Local Processing &bull; Manifest V3 Compliant.</p>
+      <p>&copy; 2026 Form Recovery Extension. Built with privacy-first standards for Google Chrome.</p>
     </footer>
   </div>
-
 </body>
 </html>
